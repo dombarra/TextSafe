@@ -27,16 +27,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View arg0) {
 
-                // custom dialog
+
                 final Dialog dialog = new Dialog(context);
                 dialog.setContentView(R.layout.dialog);
                 dialog.setTitle("Close Safe");
 
-                // set the custom dialog components - text, image and button
-
 
                 Button okButton = (Button) dialog.findViewById(R.id.okButton);
-                // if button is clicked, close the custom dialog
+
                 okButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -45,7 +43,7 @@ public class MainActivity extends Activity {
                     }
                 });
                 Button cancelButton = (Button) dialog.findViewById(R.id.cancelButton);
-                // if button is clicked, close the custom dialog
+
                 cancelButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
