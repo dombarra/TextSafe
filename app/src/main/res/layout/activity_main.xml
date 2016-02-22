@@ -1,18 +1,58 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fcfcfc" >
+    android:background="#fcfcfc">
 
-    <Button
-        android:id="@+id/btn_click"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="#176CEC"
-        android:text="SHOW POPUP"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#fff"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/textsmallerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/textkleiner" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="10"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40sp" />
+
+            <ImageButton
+                android:id="@+id/textbiggerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/textgroesser" />
+
+            <Button
+                android:id="@+id/safeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Close Safe" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|top" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/safe" />
+    </LinearLayout>
 </RelativeLayout>
