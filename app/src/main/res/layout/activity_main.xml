@@ -1,12 +1,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="#fcfcfc">
 
     <LinearLayout
+        android:id="@+id/functionsLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,7 +29,7 @@
                 android:src="@drawable/textkleiner" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textsize"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -47,6 +55,7 @@
             android:id="@+id/editText"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:background="#bdbdbd"
             android:gravity="left|top" />
 
         <ImageView
@@ -54,5 +63,6 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:src="@drawable/safe" />
+
     </LinearLayout>
 </RelativeLayout>
